@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="text">
+<h1>Documentation</h1>
+Consult the <a href="{{ url_for('jupyter') }}" target="_blank">Jupyter Notebook</a> containing the Python code for model fitting and validation.
+<br><br>
+This website has been deployed as a <b>Docker</b> container on <b>AWS Elastic Beanstalk</b>. It has been built using the following tech stack (among others):
+<br><br>
+<b>Backend:</b> Python (Flask, tensorflow/keras), JavaScript
+<br>
+<b>Frontend:</b> HTML/CSS/JavaScript
+<br>
+<h2> Next steps </h2>
+Below is a non-exhaustive list of potential additions to this project:
+<ul>
+    <li>UI/UX: Improve the overall website design for a better user experience.</li>
+    <li>Compatibility: Test the compatibility of the website on different platforms (Windows, Mac, Linux, Android, IOS etc.).</li>
+    <li>Prediction: In addition to the class, report the probabilities of he picture belonging to each class.</li>
+    <li>ML model: Improve accuracy of the model.</li>
+    <li>CI/CD pipeline: More automated testing, reporting and deployment of updates. For instance, allow the model to be periodically updated, fitted to new data and deployed on the website.</li>
+    <li>Data collection: Collect feedback from the user and store it in an RDS (relational database system) to assess the needs for updates.</li>
+    <li>Data augmentation: In addition to prediction, the user should also be allowed to add their pictures to the dataset, so they can be included in the training/validation datasets.</li>
+    <li>Monitoring: Generate reports periodically. Include model accuracy for each class and user feedback (e.g. whether their picture has been correctly identified).</li>
+    <li>Classes: Add more classes, and allow the model to be trained with these new classes once sufficiently many pictures are collected.</li>
+</ul>
+</div>
+</body>
+</html>

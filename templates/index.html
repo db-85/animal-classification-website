@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Classifier</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="container">
+<h1>Animal Image Classifier</h1>
+Choose a file from your computer, and press the "Upload" button. The ML algorithm will try to identify the animal among 151 different species and display it in green. <br> 
+To see all the potentially detectable species, please check the list of <a href="{{ url_for('classes') }}" target="_blank">animal classes</a>.<br>
+<br><br>
+<div class="warning">Disclaimer: This website has been designed for demo purpose only. The expected accuracy will depend of several factors, including the picture quality, size, etc. By uploading a picture, you provide explicit consent to process it for classification purposes. Use this webasite at your own risk, and refrain from uploading any sensitive picture.</div>
+<br>
+<br>
+<form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="image-upload" name="file" accept="image/*" required>
+    <button type="submit">Upload</button>
+</form>
+<br>
+<div id="result"></div>
+<br>
+<br>
+<br>
+<div id="animals"></div>
+<footer>
+        <a href="{{ url_for('classes') }}" target="_blank">Animal classes</a>
+        <a href="{{ url_for('documentation') }}" target="_blank">Documentation</a>
+        <a href="{{ url_for('privacy') }}" target="_blank">Privacy Policy</a>
+        <a href="{{ url_for('about') }}" target="_blank">About</a>
+<br><br><br>
+Contact: <b>dimitri DOT boiroux AT gmail DOT com</b> (replace the capitalized words with the corresponding symbol)
+</footer>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

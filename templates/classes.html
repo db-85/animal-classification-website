@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animal_classes.css') }}">
+</head>
+<body><div class="container">
+    <div class="header">
+        <h1>List of all animals</h1>
+
+    The table below lists the animal classes currently implemented. When uploading a picture, make sure that it contains one of these animals to check whether it can classify it correctly.
+    </div>
+    <div id="animals" class="grid-container"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/get_classes.js') }}"></script>
+</body>
+</html>

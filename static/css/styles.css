@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10%; /* Add padding to avoid content touching the edges */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    }
+    
+    .container {
+    text-align: center;
+
+    }
+    .text {
+        text-align: left;
+        }
+    .warning {
+        text-align: center;
+        font-weight: bolder;
+        color: red;
+        }
+    
+    #result {
+    margin-top: 20px;
+    font-size: 20px;
+    
+    color: green;
+    }
